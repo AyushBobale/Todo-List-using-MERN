@@ -1,10 +1,13 @@
-import './App.css';
+import Header from './header';
+import '../styles/app.css';
+import Mainbody from './mainbody';
 
 function App() {
   return (
-    <div>
-      <h1>Test</h1>
-    </div>
+    <app>
+      <Header></Header>
+      <Mainbody></Mainbody>
+    </app>
   );
 }
 

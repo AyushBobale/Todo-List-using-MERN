@@ -1,0 +1,82 @@
+@import 'app.scss';
+
+main {
+    background-color    : $mydark_main;
+    color               : $white;
+    height              : 100vh;
+    display             : flex;
+    flex-direction      : column;
+    align-items         : center;
+    overflow-x          : hidden;
+    overflow-y          : scroll;
+}
+
+.main-column{
+    width               : $content_width;
+    margin-top          : 20px;
+    margin-bottom       : 10px;
+    display             : flex;
+    flex-direction      : row;
+    justify-content     : center;
+    height              : fit-content;
+}
+
+.left-item {
+    margin-right        : 3px;
+    align-items         : flex-start;
+    display             : flex;
+    flex-direction      : row;
+    align-items         : baseline;
+    width               : 70%;
+    overflow-wrap       : break-word;
+}
+.right-item {
+    margin-left         : 3px;
+    align-items         : flex-end;
+    display             : flex;
+    flex-direction      : column;
+    width: 30%;
+}
+
+hr.light {
+    border-top          : 1px solid $gray-100;
+    margin              : 0%;
+    width               : $content_width;
+}
+form {
+    margin-top          : 1%;
+    margin-bottom       : 1%;
+    display             : flex;
+    flex-direction      : column;
+    width               : $content_width;
+}
+.form-right{
+    margin-top          : 10px;
+    display             : flex;
+    flex-direction      : row;
+    width               : 100%;
+}
+.left-item input{
+    width               : 100%;
+    height              : 30px;
+}
+.right-item button{
+    width               : 100%;
+    height              : 30px;
+}
+.right-item button{
+    background-color        : $mydark_main;
+    border-radius           : $form-border-radius;
+    border-width            : 1px;
+    border-color            : $gray-500; 
+    color                   : $white;
+}
+
+form textarea {
+    height: 120px;
+}
+
+.date {
+    margin-left             : 10px;
+    color                   : $gray-500;
+}

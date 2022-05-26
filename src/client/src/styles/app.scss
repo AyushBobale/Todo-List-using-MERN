@@ -1,0 +1,25 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "variables";
+
+$theme-colors: (
+  "dark"        : $mydark_nav,
+);
+
+html, body{
+  height                  : 100vh;
+  overflow                : hidden;
+  background-color        : $mydark_main;
+  color                   : $gray-400;
+}
+
+
+form textarea, form button, form input{
+  background-color        : $mydark_main;
+  border-radius           : $form-border-radius;
+  border-width            : 1px;
+  border-color            : $gray-500; 
+  color                   : $white;
+}
+form button:disabled{
+  color                   : $gray-600;
+}
